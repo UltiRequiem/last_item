@@ -1,41 +1,31 @@
 # Last Item
 
-[![codecov](https://codecov.io/gh/ultirequiem/fibonacci.js/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/fibonacci.js)
-[![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/fibonacci/mod.ts)
+[![Code Coverage](https://codecov.io/gh/ultirequiem/last_item/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/last_item)
+[![Deno Doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/last_item/mod.ts)
 
-Compute the
-[Fibonacci Succession](https://en.wikipedia.org/wiki/Fibonacci_number) and NTH
-Fibonacci Number.
+Get the last item of an array, faster than
+[Array.slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice).
 
 ## Usage
 
 The API is the same on all this platforms ✔️
 
-### [Deno 🦕](https://deno.land/x/fibonacci)
+### [Deno 🦕](https://deno.land/x/last_item)
 
 ```javascript
-import {
-  fibonacci,
-  fibonacciSequence,
-} from "https://deno.land/x/fibonacci/mod.ts";
+import { lastItem } from "https://deno.land/x/last_item/mod.ts";
 
-fibonacci(10); //=> 55
+const numbers = [1, 2, 3, 4, 5];
 
-fibonacci(5); //=> 5
+lastItem(numbers); //=> 5
 
-// First 10 Fibonacci Numbers
-for (const fiboNumber of fibonacciSequence(9)) {
-  console.log(fiboNumber);
-}
-
-console.log(`My favorites numbers are ${[...fibonacciSequence(3)]}.`);
-//=> "My favorites numbers are 0,1,1,2."
+lastItem(numbers, 3); //=> [3, 4 , 5]
 ```
 
 ### [Node.js 🐢🚀](https://npmjs.com/package/@ultirequiem/fibonacci)
 
 ```javascript
-import { fibonacci, fibonacciSequence } from "@ultirequiem/fibonacci";
+import { lastItem } from "@ultirequiem/last-item";
 ```
 
 ### [Browser 🌐](https://developer.mozilla.org/en-US/docs/Glossary/Browser)
@@ -51,7 +41,7 @@ Eg 👉
 ## Documentation
 
 Is hosted on
-[Deno Doc](https://doc.deno.land/https://deno.land/x/fibonacci/mod.ts) 📄
+[Deno Doc](https://doc.deno.land/https://deno.land/x/last_item/mod.ts) 📄
 
 ## Support
 
@@ -70,13 +60,13 @@ Don't forget to start the repo ⭐
 [Eliaz Bobadilla](https://ultirequiem.com) - Creator and Maintainer 💪
 
 See also the full list of
-[contributors](https://github.com/UltiRequiem/fibonacci.js/contributors) who
+[contributors](https://github.com/UltiRequiem/last_item/contributors) who
 participated in this project ✨
 
 ## Versioning
 
 We use [Semantic Versioning](http://semver.org). For the versions available, see
-the [tags](https://github.com/UltiRequiem/fibonacci.js/tags) 🏷️
+the [tags](https://github.com/UltiRequiem/last_item/tags) 🏷️
 
 ## Licence
 
