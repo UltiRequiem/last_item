@@ -5,35 +5,35 @@
  * Released under the MIT License.
  */
 
-export function lastItem<T>(array: T[], items = 1) {
+export function lastItem<T>(array: readonly T[]): T;
+export function lastItem<T>(array: readonly T[], length: number): T[];
+export function lastItem<T>(array: readonly T[], length = 1) {
   if (!Array.isArray(array)) {
     throw new TypeError("Expected an array.");
   }
 
-  if (typeof items !== "number") {
-    throw new TypeError("Expected a number.");
-  }
-
-  if (items === 1) {
+  if (length === 1) {
     return array[array.length - 1];
   }
 
   if (array.length <= 0) {
-    throw new RangeError("Expected number bigger than zero.");
+    throw new RangeError("Expected an array with at least one item.");
   }
 
-  if (items > array.length) {
+  if (!Number.isInteger(length)) {
+    throw new TypeError("Expected an integer.");
+  }
+
+  if (length > array.length) {
     throw new RangeError("More items were requested than there are.");
   }
 
-  const result = [];
+  const result = Array.from({ length });
 
-  for (
-    let index = array.length - 1, second = index - items;
-    index >= items;
-    index--, second--
-  ) {
-    result[second] = array[index];
+  let index = array.length;
+
+  while (length--) {
+    result[length] = array[--index];
   }
 
   return result;
