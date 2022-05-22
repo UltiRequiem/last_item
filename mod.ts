@@ -12,12 +12,12 @@ export function lastItem<T>(array: readonly T[], length = 1) {
     throw new TypeError("Expected an array.");
   }
 
-  if (length === 1) {
-    return array[array.length - 1];
-  }
-
   if (array.length <= 0) {
     throw new RangeError("Expected an array with at least one item.");
+  }
+
+  if (length === 1) {
+    return array[array.length - 1];
   }
 
   if (!Number.isInteger(length)) {
