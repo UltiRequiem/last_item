@@ -69,6 +69,24 @@ animals.splice(-2); //=> ["Horse", "Lion"]
 One of the biggest advantages of this module is also that it is packaged to be
 easy to use in various environments such as Node.js, Deno or the Browser.
 
+## Benchmarks
+
+Check the benchmark code on `bench.ts` ⚡
+
+```
+benchmark       time (avg)             (min … max)       p75       p99      p995
+-------------------------------------------------- -----------------------------
+Slice        37.46 ns/iter   (33.96 ns … 83.26 ns)  36.28 ns  67.43 ns   67.8 ns
+At           67.28 ns/iter   (65.89 ns … 80.11 ns)  67.43 ns  79.01 ns  79.34 ns
+Array Last    11.6 ns/iter   (11.38 ns … 16.81 ns)   11.4 ns   12.7 ns  12.94 ns
+Last Item    11.41 ns/iter   (11.38 ns … 15.74 ns)  11.39 ns  11.94 ns   12.1 ns
+```
+
+> Version 0.1.1
+
+Benchmarks are run on GitHub Actions on each commit, you can see the latest runs
+[here](https://github.com/UltiRequiem/last_item/actions/workflows/benchmark.yaml).
+
 ## Documentation
 
 Is hosted on
