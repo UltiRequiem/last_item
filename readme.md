@@ -82,20 +82,17 @@ it's strange behavior, here are some things I noticed.
 
 - [If you send an empty array it will return null](https://github.com/jonschlinkert/array-last/blob/master/index.js#L16)
 
-> This module will throw a `RangeError`
+> This module would throw a `RangeError`
 
 - [If you send a parameter that is not a number as length it will be changed to
   `1`](https://github.com/jonschlinkert/array-last/blob/master/index.js#L20)
 
 > This module would throw a `TypeError`
 
-- [If you send as expected length a number greater than the length of the array,
-  it will give you an array with `undefined` in some index.](https://github.com/jonschlinkert/array-last/issues/6)
+- [If you send a number larger than the length of the array, the array will be filled with `undefined`.](https://github.com/jonschlinkert/array-last/issues/6)
 
 ```javascript
-const last = require("array-last");
-
-last(["a", "b", "c", "d", "e", "f"], 7); //=> [ undefined, 'a', 'b', 'c', 'd', 'e', 'f' ]
+last(["a", "b", "c"], 4); //=> [ undefined, 'a', 'b', 'c' ]
 ```
 
 > This module would throw a `RangeError`
