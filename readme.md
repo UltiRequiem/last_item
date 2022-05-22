@@ -4,7 +4,7 @@
 [![Deno Doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/last_item/mod.ts)
 
 Get the last item of an array, faster than
-[Array.slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice).
+[`Array.prototype.slice`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)/[`Array.project.at`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/at).
 
 ## Usage
 
@@ -37,6 +37,37 @@ Eg 👉
 [SkyPack](https://cdn.skypack.dev/@ultirequiem/random-item) 🆚
 [Script Tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
 ↔️ [JSDelivr](https://cdn.jsdelivr.net/npm/@ultirequiem/random-item)
+
+## Alternatives
+
+This is a utility module, which focuses on being faster than its native
+counterparts and similar modules.
+
+In the vast majority of cases you should prefer `Array.prototype.slice` or
+`Array.prototype.at` if performance is not an issue.
+
+### Get Last Array Item
+
+```javascript
+const abc = ["a", "b", "c"];
+
+lastItem(abc); //=> "c"
+
+abc.at(-1); //=> "c"
+```
+
+### Get N Last Array Items
+
+```javascript
+const animals = ["Tiger", "Horse", "Lion"];
+
+lastItem(animals, 2); //=> ["Horse", "Lion"]
+
+animals.splice(-2); //=> ["Horse", "Lion"]
+```
+
+One of the biggest advantages of this module is also that it is packaged to be
+easy to use in various environments such as Node.js, Deno or the Browser.
 
 ## Documentation
 
