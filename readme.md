@@ -110,13 +110,13 @@ Check the benchmark code on `bench.ts` ⚡
 ```
 benchmark       time (avg)             (min … max)       p75       p99      p995
 -------------------------------------------------- -----------------------------
-Slice        37.46 ns/iter   (33.96 ns … 83.26 ns)  36.28 ns  67.43 ns   67.8 ns
-At           67.28 ns/iter   (65.89 ns … 80.11 ns)  67.43 ns  79.01 ns  79.34 ns
-Array Last    11.6 ns/iter   (11.38 ns … 16.81 ns)   11.4 ns   12.7 ns  12.94 ns
-Last Item    11.41 ns/iter   (11.38 ns … 15.74 ns)  11.39 ns  11.94 ns   12.1 ns
+Slice        44.75 ns/iter  (39.73 ns … 801.56 ns)  42.69 ns  79.87 ns  80.45 ns
+At           81.23 ns/iter  (79.83 ns … 104.44 ns)  81.35 ns  94.27 ns  94.68 ns
+Array Last   13.93 ns/iter   (13.65 ns … 29.26 ns)   13.7 ns  15.01 ns  15.38 ns
+Last Item    14.21 ns/iter    (12.7 ns … 19.77 ns)  14.87 ns  15.37 ns  15.51 ns
 ```
 
-> Version 0.1.1
+> Version 0.1.2
 
 Benchmarks are run on GitHub Actions on each commit, you can see the latest runs
 [here](https://github.com/UltiRequiem/last_item/actions/workflows/benchmark.yaml).
