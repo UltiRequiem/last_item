@@ -7,5 +7,5 @@ buildPackage({
   homepage: "https://ulti.js.org/last_item",
   keywords: ["item", "array"],
   license: "MIT",
-  version: "1.0.0",
+  version: "0.1.0",
 });
