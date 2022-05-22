@@ -22,7 +22,7 @@ lastItem(numbers); //=> 5
 lastItem(numbers, 3); //=> [3, 4 , 5]
 ```
 
-### [Node.js 🐢🚀](https://npmjs.com/package/@ultirequiem/fibonacci)
+### [Node.js 🐢🚀](https://npmjs.com/package/@ultirequiem/last-item)
 
 ```javascript
 import { lastItem } from "@ultirequiem/last-item";
