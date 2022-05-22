@@ -46,6 +46,9 @@ counterparts and similar modules.
 In the vast majority of cases you should prefer `Array.prototype.slice` or
 `Array.prototype.at` if performance is not an issue.
 
+> One of the biggest advantages of this module is also that it is packaged to be
+> easy to use in various environments such as Node.js, Deno or the Browser.
+
 ### Get Last Array Item
 
 ```javascript
@@ -66,8 +69,29 @@ lastItem(animals, 2); //=> ["Horse", "Lion"]
 animals.splice(-2); //=> ["Horse", "Lion"]
 ```
 
-One of the biggest advantages of this module is also that it is packaged to be
-easy to use in various environments such as Node.js, Deno or the Browser.
+### Similar Modules
+
+- [array-last](https://github.com/jonschlinkert/array-last): This module is also
+  quite fast, so I am including it as an alternative, I must mention that it has
+  some bugs and open pull requests for several years and there seems to be no
+  activity.
+
+The biggest drawback of this module in my opinion is the poor error handling and
+it's strange behavior, here are some things I noticed.
+
+- [If you send an empty array it will return null](https://github.com/jonschlinkert/array-last/blob/master/index.js#L16)
+
+> This module will throw a `RangeError`
+
+- [If you send a parameter that is not a number as length it will be changed to
+  `1`](https://github.com/jonschlinkert/array-last/blob/master/index.js#L20)
+
+> This module will throw a TypeError
+
+- [If you send as expected length a number greater than the length of the array,
+  it will give you an array with `undefined` in some index.](https://github.com/jonschlinkert/array-last/issues/6)
+
+- [Does not handle if you send a negative number as expected length.](https://github.com/jonschlinkert/array-last/issues/10)
 
 ## Benchmarks
 
