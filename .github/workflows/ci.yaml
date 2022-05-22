@@ -32,13 +32,15 @@ jobs:
         run: deno lint
 
       - name: Check
+        if: matrix.os == 'ubuntu-latest'
         run: deno check mod.ts
+
+      - name: Benchmark
+        if: matrix.os == 'ubuntu-latest'
+        run: deno bench --unstable
 
       - name: Tests
         run: deno test --coverage=./cov
-
-      - name: Benchmark
-        run: deno bench --unstable
 
       - name: Generate Coverage
         if: matrix.os == 'ubuntu-latest'
