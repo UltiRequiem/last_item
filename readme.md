@@ -86,16 +86,28 @@ it's strange behavior, here are some things I noticed.
 - [If you send a parameter that is not a number as length it will be changed to
   `1`](https://github.com/jonschlinkert/array-last/blob/master/index.js#L20)
 
-> This module will throw a TypeError
+> This module would throw a `TypeError`
 
 - [If you send as expected length a number greater than the length of the array,
   it will give you an array with `undefined` in some index.](https://github.com/jonschlinkert/array-last/issues/6)
 
+```javascript
+const last = require("array-last");
+
+last(["a", "b", "c", "d", "e", "f"], 7); //=> [ undefined, 'a', 'b', 'c', 'd', 'e', 'f' ]
+```
+
+> This module would throw a `RangeError`
+
 - [Does not handle if you send a negative number as expected length.](https://github.com/jonschlinkert/array-last/issues/10)
+
+> This module would throw a `RangeError`
 
 ## Benchmarks
 
 Check the benchmark code on `bench.ts` ⚡
+
+> [Using Deno's built-in benchmark runner](https://deno.land/manual/tools/benchmarker)
 
 ```
 benchmark       time (avg)             (min … max)       p75       p99      p995
