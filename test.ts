@@ -3,7 +3,7 @@ import { lastItem } from "./mod.ts";
 import {
   assertEquals,
   assertThrows,
-} from "https://deno.land/std@0.135.0/testing/asserts.ts";
+} from "https://deno.land/std@0.140.0/testing/asserts.ts";
 
 Deno.test("lastItem", () => {
   const numbers = [1, 2, 3, 4, 5] as const;

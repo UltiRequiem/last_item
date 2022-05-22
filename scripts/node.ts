@@ -1,4 +1,4 @@
-import { buildPackage } from "https://deno.land/x/ultirequiem@0.0.12/node_support.ts";
+import { buildPackage } from "https://deno.land/x/ultirequiem@0.0.15/node.ts";
 
 buildPackage({
   repoName: "last_item",
@@ -7,5 +7,5 @@ buildPackage({
   homepage: "https://ulti.js.org/last_item",
   keywords: ["item", "array"],
   license: "MIT",
-  version: "0.1.1",
+  version: "0.1.2",
 });
