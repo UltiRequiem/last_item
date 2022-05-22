@@ -71,10 +71,11 @@ animals.splice(-2); //=> ["Horse", "Lion"]
 
 ### Similar Modules
 
-- [array-last](https://github.com/jonschlinkert/array-last): This module is also
-  quite fast, so I am including it as an alternative, I must mention that it has
-  some bugs and open pull requests for several years and there seems to be no
-  activity.
+#### [array-last](https://github.com/jonschlinkert/array-last)
+
+This module is also quite fast, so I am including it as an alternative, I must
+mention that it has some bugs and open pull requests for several years and there
+seems to be no activity.
 
 The biggest drawback of this module in my opinion is the poor error handling and
 it's strange behavior, here are some things I noticed.
