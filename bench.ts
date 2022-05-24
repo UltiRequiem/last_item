@@ -1,4 +1,5 @@
-import { lastItem, unsafeLastItem } from "./mod.ts";
+import { lastItem } from "./mod.ts";
+import { unsafeLastItem } from "./mod_unsafe.ts";
 
 import arrayLast from "https://esm.sh/array-last@1.3.0";
 

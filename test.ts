@@ -1,13 +1,14 @@
 import { lastItem } from "./mod.ts";
+import { unsafeLastItem } from "./mod_unsafe.ts";
 
 import {
   assertEquals,
   assertThrows,
 } from "https://deno.land/std@0.140.0/testing/asserts.ts";
 
-Deno.test("lastItem", () => {
-  const numbers = [1, 2, 3, 4, 5] as const;
+const numbers = [1, 2, 3, 4, 5] as const;
 
+Deno.test("lastItem", () => {
   assertEquals(5, lastItem(numbers));
 
   assertEquals([3, 4, 5], lastItem(numbers, 3));
@@ -31,4 +32,12 @@ Deno.test("lastItem", () => {
   assertThrows(() => {
     lastItem(numbers, numbers.length + 10);
   });
+});
+
+Deno.test("unsafeLastItem", () => {
+  assertEquals(5, unsafeLastItem(numbers));
+
+  assertEquals([3, 4, 5], lastItem(numbers, 3));
+
+  assertEquals(numbers, lastItem(numbers, numbers.length));
 });
