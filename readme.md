@@ -4,7 +4,7 @@
 [![Deno Doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/last_item/mod.ts)
 
 Get the last N items of an array or just the last one, faster than
-[`Array.prototype.slice`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)/[`Array.project.at`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/at).
+[`Array.prototype.slice`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)/[`Array.prototype.at`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/at).
 
 ## Usage
 
