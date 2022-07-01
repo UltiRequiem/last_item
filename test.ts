@@ -4,7 +4,7 @@ import { unsafeLastItem } from "./mod_unsafe.ts";
 import {
   assertEquals,
   assertThrows,
-} from "https://deno.land/std@0.141.0/testing/asserts.ts";
+} from "https://deno.land/std@0.146.0/testing/asserts.ts";
 
 const numbers = [1, 2, 3, 4, 5] as const;
 
