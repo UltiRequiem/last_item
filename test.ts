@@ -5,7 +5,7 @@ import {
   assertThrows,
 } from "https://deno.land/std@0.146.0/testing/asserts.ts";
 
-const numbers = [1, 2, 3, 4, 5] as const;
+const numbers = [1, 2, 3, 4, 5];
 
 Deno.test("lastItem", () => {
   assertEquals(5, lastItem(numbers));
