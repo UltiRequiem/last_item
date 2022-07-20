@@ -41,10 +41,6 @@ export function lastItem<T>(array: readonly T[], length = 1) {
     throw new RangeError("More items were requested than there are.");
   }
 
-  if (length === index) {
-    return array;
-  }
-
   const result = [];
 
   while (length--) {
