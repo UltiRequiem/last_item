@@ -28,7 +28,6 @@ Deno.bench(
   },
 );
 
-
 Deno.bench(
   "Last Multiple Items [Array.prototype.slice]",
   { group: "Multiple Items" },
