@@ -1,6 +1,9 @@
 # Last Item
 
-[![Code Coverage](https://codecov.io/gh/ultirequiem/last_item/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/last_item)
+[![npm](https://img.shields.io/npm/v/@ultirequiem/last-item?logo=npm&color=cb3837)](https://www.npmjs.com/package/@ultirequiem/last-item)
+[![npm downloads](https://img.shields.io/npm/dm/@ultirequiem/last-item?color=cb3837)](https://www.npmjs.com/package/@ultirequiem/last-item)
+[![CI](https://github.com/UltiRequiem/last_item/actions/workflows/ci.yaml/badge.svg)](https://github.com/UltiRequiem/last_item/actions/workflows/ci.yaml)
+[![codecov](https://codecov.io/gh/UltiRequiem/last_item/graph/badge.svg)](https://codecov.io/gh/UltiRequiem/last_item)
 
 Get the last N items of an array or just the last one, faster than
 [`Array.prototype.slice`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)/[`Array.prototype.at`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/at).
@@ -13,7 +16,7 @@ npm install @ultirequiem/last-item
 
 ## Usage
 
-ESM only: the same import works in Node.js, Bun and browsers.
+ESM only, types included: the same import works in Node.js, Bun and browsers.
 
 ```javascript
 import { lastItem } from "@ultirequiem/last-item";
@@ -105,12 +108,12 @@ Benchmarks are run on GitHub Actions on each commit, you can see the latest runs
 
 ## Support
 
-Open an Issue, I will check it a soon as possible 👀
+Open an Issue, I will check it as soon as possible 👀
 
 If you want to hurry me up a bit
 [send me a tweet](https://twitter.com/UltiRequiem) 😆
 
-Don't forget to start the repo ⭐
+Don't forget to star the repo ⭐
 
 ## Authors
 
