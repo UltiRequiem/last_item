@@ -1,11 +1,12 @@
 # Last Item
 
+Get the last N items of an array or just the last one, faster than
+
 [![npm](https://img.shields.io/npm/v/@ultirequiem/last-item?logo=npm&color=cb3837)](https://www.npmjs.com/package/@ultirequiem/last-item)
 [![npm downloads](https://img.shields.io/npm/dm/@ultirequiem/last-item?color=cb3837)](https://www.npmjs.com/package/@ultirequiem/last-item)
 [![CI](https://github.com/UltiRequiem/last_item/actions/workflows/ci.yaml/badge.svg)](https://github.com/UltiRequiem/last_item/actions/workflows/ci.yaml)
 [![codecov](https://codecov.io/gh/UltiRequiem/last_item/graph/badge.svg)](https://codecov.io/gh/UltiRequiem/last_item)
 
-Get the last N items of an array or just the last one, faster than
 [`Array.prototype.slice`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)/[`Array.prototype.at`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/at).
 
 ## Install
