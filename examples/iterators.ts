@@ -1,4 +1,4 @@
-import { fibonacciSequence } from "https://deno.land/x/fibonacci@v1.3.1/mod.ts";
+import { fibonacciSequence } from "@ultirequiem/fibonacci";
 
 import { lastItem } from "../mod.ts";
 
