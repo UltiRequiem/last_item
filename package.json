@@ -1,7 +1,7 @@
 {
   "name": "@ultirequiem/last-item",
   "version": "0.0.0-development",
-  "description": "Get the last item of an array.",
+  "description": "Get the last item, or the last N items, of an array.",
   "type": "module",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -18,8 +18,11 @@
     "node": ">=20"
   },
   "keywords": [
-    "item",
-    "array"
+    "array",
+    "last",
+    "tail",
+    "esm",
+    "typescript"
   ],
   "license": "MIT",
   "homepage": "https://ulti.js.org/last_item",
