@@ -1,19 +1,22 @@
 # Last Item
 
 [![Code Coverage](https://codecov.io/gh/ultirequiem/last_item/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/last_item)
-[![Deno Doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/last_item/mod.ts)
 
 Get the last N items of an array or just the last one, faster than
 [`Array.prototype.slice`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)/[`Array.prototype.at`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/at).
 
+## Install
+
+```sh
+npm install @ultirequiem/last-item
+```
+
 ## Usage
 
-The API is the same on all this platforms ✔️
-
-### [Deno 🦕](https://deno.land/x/last_item)
+ESM only: the same import works in Node.js, Bun and browsers.
 
 ```javascript
-import { lastItem } from "https://deno.land/x/last_item/mod.ts";
+import { lastItem } from "@ultirequiem/last-item";
 
 const numbers = [1, 2, 3, 4, 5];
 
@@ -22,22 +25,6 @@ lastItem(numbers); //=> 5
 lastItem(numbers, 3); //=> [3, 4 , 5]
 ```
 
-### [Node.js 🐢🚀](https://npmjs.com/package/@ultirequiem/last-item)
-
-```javascript
-import { lastItem } from "@ultirequiem/last-item";
-```
-
-### [Browser 🌐](https://developer.mozilla.org/en-US/docs/Glossary/Browser)
-
-You can use any [CDN](https://en.wikipedia.org/wiki/Content_delivery_network) 🔥
-
-Eg 👉
-[ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) ↔️
-[SkyPack](https://cdn.skypack.dev/@ultirequiem/random-item) 🆚
-[Script Tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
-↔️ [JSDelivr](https://cdn.jsdelivr.net/npm/@ultirequiem/random-item)
-
 ## Alternatives
 
 This is a utility module, which focuses on being faster than its native
@@ -45,9 +32,6 @@ counterparts and similar modules.
 
 In the vast majority of cases you should prefer `Array.prototype.slice` or
 `Array.prototype.at` if performance is not an issue.
-
-> One of the biggest advantages of this module is also that it is packaged to be
-> easy to use in various environments such as Node.js, Deno or the Browser.
 
 ### Get Last Array Item
 
@@ -105,8 +89,6 @@ last(["a", "b", "c"], 4); //=> [ undefined, 'a', 'b', 'c' ]
 
 Check the benchmark code on `bench.ts` ⚡
 
-> [Using Deno's built-in benchmark runner](https://deno.land/manual/tools/benchmarker)
-
 ```
 benchmark       time (avg)             (min … max)       p75       p99      p995
 -------------------------------------------------- -----------------------------
@@ -121,20 +103,12 @@ Last Item    14.21 ns/iter    (12.7 ns … 19.77 ns)  14.87 ns  15.37 ns  15.51 
 Benchmarks are run on GitHub Actions on each commit, you can see the latest runs
 [here](https://github.com/UltiRequiem/last_item/actions/workflows/benchmark.yaml).
 
-## Documentation
-
-Is hosted on
-[Deno Doc](https://doc.deno.land/https://deno.land/x/last_item/mod.ts) 📄
-
 ## Support
 
 Open an Issue, I will check it a soon as possible 👀
 
 If you want to hurry me up a bit
 [send me a tweet](https://twitter.com/UltiRequiem) 😆
-
-Consider [supporting me on Patreon](https://patreon.com/UltiRequiem) if you like
-my work 🙏
 
 Don't forget to start the repo ⭐
 

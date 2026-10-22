@@ -1,4 +1,4 @@
-import { lastItem } from "./mod.ts";
+import { lastItem } from "../src/index.js";
 
 import arrayLast from "https://esm.sh/array-last@1.3.0";
 
